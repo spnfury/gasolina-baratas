@@ -27,7 +27,7 @@ if (!GROQ_API_KEY || !NOCODB_API_URL || !NOCODB_API_TOKEN || !NOCODB_TABLE_ID) {
 async function fetchMitecoPrices() {
   console.log('📊 Fetching MITECO prices...');
   const res = await fetch(
-    'https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarworkerantes/PreciosCarworkerantes/EstacionesTerrestres/'
+    'https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/'
   );
   if (!res.ok) throw new Error(`MITECO API error: ${res.status}`);
   const data = await res.json();
