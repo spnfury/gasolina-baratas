@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllSlugs, getPostBySlug } from '@/lib/nocodb';
 import { notFound } from 'next/navigation';
-import AdBanner from '@/components/AdBanner';
 
 function markdownToHtml(md: string): string {
     let html = md
@@ -104,7 +103,7 @@ export default async function ArticlePage(props: PageProps) {
 
             {/* ---- Ad ---- */}
             <div className="rg-container">
-                <AdBanner slot="1234567892" format="horizontal" />
+
             </div>
 
             <section className="blog-cta">
